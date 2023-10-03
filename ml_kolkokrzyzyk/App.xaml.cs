@@ -2,11 +2,12 @@
 {
     public partial class App : Application
     {
+        public static string username;
         public App()
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new Start());
         }
     }
 }
